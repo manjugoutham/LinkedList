@@ -6,12 +6,12 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		Linkedlistds list = new Linkedlistds();
-		list.adding(56);
 		list.adding(70);
 		list.adding(30);
+		list.adding(56);
 		list.display();
-		list.deletefirstele();
-		System.out.println("After the delete the first element \n");
+		list.deletelastele();
+		System.out.println("After the delete the last element \n");
 		list.display();
 	}
 

@@ -43,6 +43,18 @@ public class Linkedlistds {
         return currentNode;
     }
 	
+	//delete the last element in the LinkedList
+	
+	public void deletelastele() {
+        Node currentNode = head;
+        Node tailprev = null;
+        while(currentNode.next != null) {
+        	tailprev = currentNode;
+            currentNode = currentNode.next;
+        }
+        tailprev.next = null;
+    }
+	
 	// Displaying the data
 	public void display() {
 		Node currentNode = head;
