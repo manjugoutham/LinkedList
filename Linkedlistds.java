@@ -36,6 +36,13 @@ public class Linkedlistds {
 		currentNode.next = node;
 	}
 
+	//delete the first element in the LinkedList
+	public Node deletefirstele() {
+        Node currentNode = head;
+        head = head.next;
+        return currentNode;
+    }
+	
 	// Displaying the data
 	public void display() {
 		Node currentNode = head;
