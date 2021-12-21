@@ -70,6 +70,21 @@ public class Linkedlistds {
         return null;
     }
 	
+	public void findnodedelete(int data) {
+        Node currentNode = head;
+        Node previousNode = head;
+
+        while(currentNode != null) {
+            if(currentNode.data == data) {  //30
+            //	System.out.println(currentNode);
+                previousNode.next = currentNode.next;
+                return;
+            }
+            previousNode = currentNode;
+            currentNode = currentNode.next;
+        }
+    }
+	
 	// Displaying the data
 	public void display() {
 		Node currentNode = head;
