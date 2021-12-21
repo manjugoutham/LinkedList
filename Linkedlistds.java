@@ -12,6 +12,16 @@ public class Linkedlistds {
 		head = node;
 	}
 	
+   //appending the elements
+	public void appending(int data) {
+		Node currentNode = head;
+
+		while (currentNode.next != null) {
+			currentNode = currentNode.next;
+		}
+		Node node = new Node(data);
+		node.setData(data);
+		currentNode.setNext(node);
 
 	//Displaying the data
 	public void display() {

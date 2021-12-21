@@ -6,9 +6,9 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		Linkedlistds list = new Linkedlistds();
-
-		list.adding(76);
+		
 		list.adding(30);
+		list.appending(70);
 		list.adding(56);
 		list.display();
 	}
