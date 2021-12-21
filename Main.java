@@ -6,11 +6,12 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		Linkedlistds list = new Linkedlistds();
-		
-		list.adding(30);
-		list.appending(70);
 		list.adding(56);
 		list.display();
+		list.appending(70);
+		list.display();
+		list.insertbetween(56, 30);
+		list.display();;
 	}
 
 }
