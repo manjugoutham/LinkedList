@@ -70,6 +70,7 @@ public class Linkedlistds {
         return null;
     }
 	
+	// find the node and delete the any node
 	public void findnodedelete(int data) {
         Node currentNode = head;
         Node previousNode = head;
@@ -82,6 +83,29 @@ public class Linkedlistds {
             }
             previousNode = currentNode;
             currentNode = currentNode.next;
+        }
+    }
+	
+	//Ordered Linked List in ascending order
+	
+	public void ascendingorder() {
+        Node currentNode = head , index = null;
+        if(head == null) {
+            System.out.println("List Is Empty");
+            return;
+        }
+
+        while(currentNode != null) {
+            index = currentNode.getNext();
+            while(index != null) {
+                if(currentNode.getData() > index.getData()) {
+                    int temp = currentNode.getData();
+                    currentNode.setData(index.getData());
+                    index.setData(temp);
+                }
+                index = index.getNext();
+            }
+            currentNode = currentNode.getNext();
         }
     }
 	
