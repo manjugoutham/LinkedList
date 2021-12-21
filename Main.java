@@ -10,8 +10,9 @@ public class Main {
 		list.adding(30);
 		list.adding(56);
 		list.display();
-		list.deletelastele();
-		System.out.println("After the delete the last element \n");
+		System.out.println("Search the LinkedList Node value 30 : \n");
+		list.search(30);
+		System.out.println();
 		list.display();
 	}
 

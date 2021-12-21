@@ -55,6 +55,21 @@ public class Linkedlistds {
         tailprev.next = null;
     }
 	
+	//to search LinkedList to find Node with value 30
+	
+	public Node search(int data) {
+        Node currentNode = head;
+
+        while(currentNode.next != null) {
+            if(currentNode.data == data) {
+                System.out.println("Element Found "+data);
+                return currentNode;
+            }
+            currentNode = currentNode.next;
+        }
+        return null;
+    }
+	
 	// Displaying the data
 	public void display() {
 		Node currentNode = head;
